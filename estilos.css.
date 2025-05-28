@@ -17,7 +17,7 @@ body {
 header {
     background-color: #FFEB3B;  /* Amarelo vibrante */
     color: #333;
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
     border-bottom: 5px solid #F57F17; /* Detalhes mais escuros no fundo */
 }
@@ -65,11 +65,10 @@ main {
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #F57F17;  /* Amarelo nos títulos */
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #F57F17;  /* Amarelo nos títulos */
     animation: slideIn 1s ease-in-out;
 }
 
