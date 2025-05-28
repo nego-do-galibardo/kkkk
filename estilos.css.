@@ -1,47 +1,84 @@
+/* Resetando margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Definindo a fonte do site como "Baloo 2" */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #f4f4f4;  /* Fundo cinza claro */
     color: #333;
+    line-height: 1.6;
 }
 
+/* Cabeçalho com fundo amarelo e texto branco */
 header {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 1rem;
+    background-color: #FFEB3B;  /* Amarelo vibrante */
+    color: #333;
+    padding: 1.5rem;
     text-align: center;
+    border-bottom: 5px solid #F57F17; /* Detalhes mais escuros no fundo */
 }
 
+header .logo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Navegação no cabeçalho */
 header nav ul {
     list-style: none;
     margin-top: 1rem;
+    padding: 0;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s;
 }
 
+header nav ul li a:hover {
+    color: #F57F17;
+}
+
+/* Estilo principal */
 main {
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 
+/* Títulos das seções */
 h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #F57F17;  /* Amarelo nos títulos */
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Parágrafos e listas */
+p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 ul {
@@ -49,10 +86,48 @@ ul {
     margin-top: 1rem;
 }
 
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: "✔";
+    color: #FFEB3B;  /* Detalhes amarelos nas listas */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* Efeitos de animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
