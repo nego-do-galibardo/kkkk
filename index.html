@@ -1,52 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agricultura Familiar</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agricultura Familiar: A Base Sustentável do Futuro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🌾 Agricultura Familiar: Raiz do Brasil</h1>
-    <p>Produzindo com amor, colhendo com orgulho</p>
+  <header class="hero">
+    <div class="container">
+      <h1>Agricultura Familiar</h1>
+      <p>A Base Sustentável do Futuro</p>
+      <a href="#sobre" class="botao">Saiba Mais</a>
+    </div>
   </header>
 
-  <main>
-    <section class="bloco">
-      <img src="img/campo.jpg" alt="Campo fértil" />
-      <div>
-        <h2>🌱 O que é Agricultura Familiar?</h2>
-        <p>
-          É o cultivo da terra por famílias, preservando tradições, natureza e alimentando milhões de brasileiros todos os dias!
-        </p>
-      </div>
-    </section>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#estatisticas">Estatísticas</a></li>
+      <li><a href="#apoie">Apoie</a></li>
+    </ul>
+  </nav>
 
-    <section class="bloco invertido">
-      <div>
-        <h2>👨‍👩‍👧‍👦 Fortalece Comunidades</h2>
-        <p>
-          Gera renda, emprego, mantém a cultura rural viva e aproxima as pessoas do alimento de verdade.
-        </p>
-      </div>
-      <img src="img/familia.jpg" alt="Família na plantação" />
-    </section>
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>O que é Agricultura Familiar?</h2>
+      <p>A agricultura familiar é responsável pela produção de grande parte dos alimentos consumidos no Brasil. É praticada por pequenos produtores que utilizam mão de obra predominantemente familiar e técnicas sustentáveis.</p>
+    </div>
+  </section>
 
-    <section class="bloco">
-      <img src="img/produtos.jpg" alt="Produtos naturais" />
-      <div>
-        <h2>🍎 Alimento Saudável e Sustentável</h2>
-        <p>
-          Menos agrotóxicos, mais sabor e qualidade de vida para todos — direto do campo para a sua mesa.
-        </p>
+  <section id="beneficios" class="section cinza">
+    <div class="container">
+      <h2>Benefícios da Agricultura Familiar</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sustentabilidade</h3>
+          <p>Uso racional dos recursos naturais, preservando o meio ambiente.</p>
+        </div>
+        <div class="card">
+          <h3>Alimentos Saudáveis</h3>
+          <p>Produção de alimentos frescos e com menos agrotóxicos.</p>
+        </div>
+        <div class="card">
+          <h3>Desenvolvimento Local</h3>
+          <p>Geração de emprego e renda em comunidades rurais.</p>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section id="estatisticas" class="section">
+    <div class="container">
+      <h2>Impacto em Números</h2>
+      <div class="estatisticas">
+        <div class="estatistica">
+          <span class="numero">70%</span>
+          <p>dos alimentos consumidos vêm da agricultura familiar.</p>
+        </div>
+        <div class="estatistica">
+          <span class="numero">4,4 milhões</span>
+          <p>de estabelecimentos no Brasil são familiares.</p>
+        </div>
+        <div class="estatistica">
+          <span class="numero">10 milhões</span>
+          <p>de pessoas diretamente empregadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apoie" class="section cinza">
+    <div class="container">
+      <h2>Como Apoiar</h2>
+      <ul class="apoios">
+        <li>Compre de produtores locais e feiras da agricultura familiar.</li>
+        <li>Divulgue iniciativas sustentáveis em sua região.</li>
+        <li>Incentive políticas públicas voltadas ao campo.</li>
+        <li>Consuma de forma consciente e informada.</li>
+      </ul>
+    </div>
+  </section>
 
   <footer>
-    <p>🌻 Apoie o campo. Valorize quem produz o que você come!</p>
+    <div class="container">
+      <p>&copy; 2025 Agricultura Familiar. Projeto desenvolvido para conscientização e apoio ao campo brasileiro.</p>
+    </div>
   </footer>
 </body>
 </html>
